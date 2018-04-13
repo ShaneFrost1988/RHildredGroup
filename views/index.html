@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Sets content type to HTML SF -->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <!-- Load bootstrap SF -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <!-- Loading bootstrap sketchy theme. HOW FUN! SF -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/sketchy/bootstrap.min.css">
+  <!-- Load custom CSS SF -->
+  <link rel="stylesheet" type="text/css" href="/style.css">
+
+  <title>Wine Pairing App</title>
+
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <!--navbar from https://www.w3schools.com/bootstrap/bootstrap_navbar.asp SF -->
+    <a class="navbar-brand" href="/">
+      <h1 class="text-center">Wine Pairing for Plebs</h1>
+    </a>
+    <!-- href leads back to route for GET / SF -->
+  </nav>
+  <div>
+    <h3 class="text-center px-4"> Welcome to the wonderful world of wine pairing. Trick your friends into thinking you're a classy individual with this
+      easy to use app. <br><br> <b>Please choose your dish.</b> </h3>
+  </div>
+  <div class="container">
+
+    <div class="row grid">
+      <div class="col-xs-offset-2 col-sm-offset-2 col-xs-4 col-sm-4">
+        <!-- bootstrap 4 grid system. setting spans for mobile size devices SF SF -->
+        <!--Each image is also a link that sends you to a new page. This is a GET request to /pairings and sending the food type as a parameter SF   -->
+        <a href="/pairings/fish"><img class="center-block" src="/002-fish.png" alt="Fish" height="80" width="80"></a>
+      </div>
+      <div class="col-xs-4 col-sm-4">
+        <a href="/pairings/beef"><img class="center-block" src="/005-cow.png" alt="Beef" height="80" width="80"></a>
+      </div>
+    </div>
+    <div class="row grid">
+      <div class="col-xs-offset-2 col-sm-offset-2 col-xs-4 col-sm-4">
+        <a href="/pairings/pork"><img class="center-block" src="/006-pig.png" alt="Pork" height="80" width="80"></a>
+      </div>
+      <div class="col-xs-4 col-sm-4">
+        <a href="/pairings/lamb"><img class="center-block" src="/008-sheep.png" alt="Lamb" height="80" width="80"></a>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+</html>

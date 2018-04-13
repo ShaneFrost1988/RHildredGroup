@@ -1,0 +1,25 @@
+
+.grid div {
+  display: block;
+  width: auto;
+}
+
+div {
+  display: inline;
+}
+
+
+/* Add media query for small screens to make divs centered */
+@media (max-width: 575px) {
+  .col-xs-4.col-sm-4 {
+      width: 33.3333%;
+  }
+
+  
+}
+
+.table>tbody>tr>td, .table>thead>tr>th {
+  padding-left: 20px;
+  padding-right: 10px;
+  font-size: 16px;
+}
